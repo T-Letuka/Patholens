@@ -1,0 +1,14 @@
+{
+  "random_seed": 42,
+  "val_ratio": 0.15,
+  "train_val_folder": "Train and Validation Set",
+  "test_folder": "Test Set",
+  "classes": {
+    "colon_aca": "Colon Adenocarcinoma",
+    "colon_n": "Colon Benign",
+    "lung_aca": "Lung Adenocarcinoma",
+    "lung_n": "Lung Benign",
+    "lung_scc": "Lung Squamous Cell Carcinoma"
+  },
+  "note": "Delete data/processed/ and re-run to regenerate with new settings."
+}
