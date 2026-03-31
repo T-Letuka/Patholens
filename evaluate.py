@@ -27,8 +27,8 @@ import torchvision.transforms as transforms
 
 # Local imports
 sys.path.append(str(Path(__file__).parent.parent))
-from src.dataset import get_dataloaders, get_val_transforms, HistoDataset
-from src.model import load_model_for_inference, get_device, NUM_CLASSES, CLASS_NAMES
+from dataset import get_dataloaders, get_val_transforms, HistoDataset
+from model import load_model_for_inference, get_device, NUM_CLASSES, CLASS_NAMES
 
 
 # -----------------------------------------------------------------------------
