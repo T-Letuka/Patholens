@@ -487,7 +487,7 @@ def format_report_as_markdown(report: dict) -> str:
 
 ---
 
-### 📋 Report Header
+###  Report Header
 
 | Field | Value |
 |-------|-------|
@@ -499,31 +499,31 @@ def format_report_as_markdown(report: dict) -> str:
 
 ---
 
-### 🔬 Microscopic Description
+###  Microscopic Description
 
 {report.get('microscopic_description', 'Not available.')}
 
 ---
 
-### 📊 Interpretation
+###  Interpretation
 
 {report.get('interpretation', 'Not available.')}
 
 ---
 
-### 🏥 Clinical Significance
+###  Clinical Significance
 
 {report.get('clinical_significance', 'Not available.')}
 
 ---
 
-### ✅ Recommended Next Steps
+###  Recommended Next Steps
 
 {report.get('recommended_next_steps', 'Not available.')}
 
 ---
 
-### ⚠️ Disclaimer
+### ⚠️‼️ Disclaimer
 
 > {report.get('disclaimer', '')}
 
