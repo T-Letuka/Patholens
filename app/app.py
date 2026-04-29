@@ -115,7 +115,7 @@ p, li { color: var(--t2); }
     border: 1px solid var(--border2);
     border-radius: 12px;
     padding: 1.5rem;
-    height: 100%;
+    height: 80%;
 }
 .panel-label {
     font-family: 'DM Mono', monospace; font-size: 0.65rem;
@@ -464,7 +464,7 @@ def render_upload_view():
         st.error("Sample images not found at app/sample_images/")
         return
 
-    # Initialise session state
+  
     if "sample" not in st.session_state:
         st.session_state.sample = random.choice(samples)
     if "uploaded_file" not in st.session_state:
@@ -472,7 +472,7 @@ def render_upload_view():
 
     col_left, col_right = st.columns([1, 1], gap="large")
 
-    # ── LEFT: SAMPLE PICKER ────────────────────────────────────────────────────
+  
     with col_left:
         st.markdown("""
         <div class='panel-label'>Step 01</div>
@@ -482,7 +482,7 @@ def render_upload_view():
         </div>""", unsafe_allow_html=True)
 
         if st.button("🎲  Randomise Sample", use_container_width=True):
-            # Pick a different sample from current one
+            
             other = [s for s in samples if s["path"] != st.session_state.sample["path"]]
             st.session_state.sample = random.choice(other if other else samples)
 
@@ -491,7 +491,7 @@ def render_upload_view():
 
         st.image(img, use_container_width=True)
 
-        # Specimen metadata — NO class label, NO malignant/benign tag
+        
         st.markdown(f"""
         <div class='specimen-meta'>
             <div class='specimen-id'>{sample['spec_id']}</div>
@@ -513,7 +513,7 @@ def render_upload_view():
             </div>
         </div>""", unsafe_allow_html=True)
 
-        # Download button — filename is the specimen ID, not the class name
+       
         img_bytes = io.BytesIO()
         img.save(img_bytes, format="JPEG", quality=95)
         img_bytes.seek(0)
@@ -532,7 +532,7 @@ def render_upload_view():
             Download the slide, then upload it for classification →
         </div>""", unsafe_allow_html=True)
 
-    # ── RIGHT: UPLOAD + ANALYSE ────────────────────────────────────────────────
+    
     with col_right:
         st.markdown("""
         <div class='panel-label'>Step 02</div>
@@ -584,7 +584,7 @@ def render_upload_view():
                 </div>
             </div>""", unsafe_allow_html=True)
 
-        # Analyse button — only active when image is uploaded
+        
         st.markdown("<br>", unsafe_allow_html=True)
 
         analyse_disabled = uploaded is None

@@ -13,12 +13,12 @@ LOW_CONFIDENCE_THRESHOLD = 0.80
 CLAUDE_MODEL = "claude-sonnet-4-20250514"
 
 # Maximum tokens for the generated report
-MAX_TOKENS = 1024 #noted -  after running a test , the cost for each is 0.03 so 5$ worth of credit is enough.
+MAX_TOKENS = 1024
 
 
 CLASS_CLINICAL_INFO = {
     "Colon Adenocarcinoma": {
-        "icd_code":      "C18.9", #colon specific location was not given hence the code
+        "icd_code":      "C18.9", 
         "malignant":     True,
         "site":          "colon",
         "description":   (
