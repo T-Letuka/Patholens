@@ -19,7 +19,7 @@
 
 ## Demo Video
 
-Watch the Loom walkthrough here: [Project Demo](https://www.loom.com/share/f8006681988e443296dc6e8cdcb707a9)
+Watch the Loom walkthrough here: [Project Demo](https://www.loom.com/share/8b27bee3c90b43dfb907e6d45c992713)
 
 </div>
 
